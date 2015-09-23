@@ -1,0 +1,29 @@
+How to run app:
+1) start r
+2) library(shiny)
+3) runApp()
+
+
+Cases:
+- Starting input, grep_pattern_length < 4
+- grep_pattern_length >= 4
+
+
+
+Input                    Action                                  Output
+-----------------------------------------------------------------------------------
+how                      grep("how", dtq_ml_wuvxyz)              <NONE>
+                         grep("how", dtq_ml_wuvxy)               i
+
+how i                    grep("how i", dtq_ml_wuvxy)             met
+
+how i met                grep("how i met", dtq_ml_wuvxy)         your
+
+how i met your           grep("how i met your", dtq_ml_wuvxy     mother
+
+how i met your mother    gp_length > dtq_ml_wuvxy                <END>
+
+
+
+
+
